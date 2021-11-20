@@ -1,9 +1,10 @@
 Citizen.CreateThread(function()
     while ESX == nil do
-        TriggerEvent('esx:getShkFxaredObjkFxect', function(obj) ESX = obj end)
-        Wait(0)
+        TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+        Wait(100)
     end
 end)
+
 RegisterCommand('lockvehicle', function()
 
     local vehicle, dist = ESX.Game.GetClosestVehicle()
@@ -13,10 +14,10 @@ RegisterCommand('lockvehicle', function()
         Wait(100)
         TriggerServerEvent('carkeys:RequestVehicleLock', VehToNet(vehicle), GetVehicleDoorLockStatus(vehicle))
     else
-        ESX.ShowNotification('Žádné vozidlo nebylo nalezeno')
+        ESX.ShowNotification(_U('no_vehicle_found'))
     end
 end)
-RegisterKeyMapping('lockvehicle', 'Zamknout vozidlo', 'keyboard', 'f10')
+RegisterKeyMapping('lockvehicle', _U('lock_vehicle'), 'keyboard', 'f10')
 
 RegisterNetEvent('carlock:CarLockedEffect', function(netId, lockStatus)
     local vehicle = NetToVeh(netId)
@@ -44,9 +45,9 @@ RegisterNetEvent('carlock:CarLockedEffect', function(netId, lockStatus)
         PlayVehicleDoorCloseSound(vehicle, 1)
         SetVehicleDoorsLockedForAllPlayers(vehicle, lockStatus)
         if lockStatus then
-            ESX.ShowNotification('Vozidlo bylo úspěšně zamčeno')
+            ESX.ShowNotification(_U('vehicle_locked'))
         else
-            ESX.ShowNotification('Vozidlo bylo úspěšně odemčeno')
+            ESX.ShowNotification(_U('vehicle_unlocked'))
         end
 
         SetVehicleLights(vehicle, 2)
@@ -62,7 +63,7 @@ RegisterNetEvent('carlock:CarLockedEffect', function(netId, lockStatus)
     end
 end)
 
-RegisterCommand('datklice', function()
+RegisterCommand('givekeys', function()
     local closestP, closestD = ESX.Game.GetClosestPlayer()
     local vehicle, dist = ESX.Game.GetClosestVehicle()
     if DoesEntityExist(vehicle) and closestP ~= -1 and closestD < 4 and dist < 10 then
@@ -94,7 +95,7 @@ Citizen.CreateThread(function()
         local dist = #(GetEntityCoords(playerPed) - centralPos)
 
         if dist < 15.0 then
-            Draw3DText(centralPos.x, centralPos.y, centralPos.z, '[E] Pro výměnu zámků za 5000$')
+            Draw3DText(centralPos.x, centralPos.y, centralPos.z, _U('change_locks_for', Config.Price))
             if dist < 2 then
                 if IsControlJustPressed(0, 38) then
                     local veh = GetVehiclePedIsIn(playerPed)
@@ -102,7 +103,7 @@ Citizen.CreateThread(function()
                         TriggerServerEvent('carkeys:NewLocks', GetVehicleNumberPlateText(veh))
                         Wait(5000)
                     else
-                        ESX.ShowNotification('Musíš sedět ve vozidle')
+                        ESX.ShowNotification(_U('must_in_vehicle'))
                     end
                 end
             end
@@ -123,7 +124,7 @@ Citizen.CreateThread(function()
     SetBlipAsShortRange(blip, true)
 
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString(AddTextComponentString("<font face='OpenSans-SemiBold'>Locksmith</font>"))
+    AddTextComponentString(AddTextComponentString(_U('locksmith')))
     EndTextCommandSetBlipName(blip)
 
 end)
