@@ -11,7 +11,7 @@ Modern, simple, clear script for locking player vehicles. Optimized server + cli
 
 # Controls
 - /givekeys - Give keys to a player
-- /lockvehicle or J - Lock closest vehicle
+- /lockvehicle or F10 - Lock closest vehicle
 
 # Exports
 - Server side
