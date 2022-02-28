@@ -56,7 +56,7 @@ RegisterNetEvent('carkeys:GiveKeyToPerson', function(plate, target)
     if owner == xPlayer.identifier then
         local xTarget = ESX.GetPlayerFromId(target)
         local peopleWithKeys = MySQL.Sync.fetchScalar('SELECT peopleWithKeys FROM owned_vehicles WHERE plate = "'..plate..'"')
-        local keysTable = json.decode(peopleWithKeys)
+        local keysTable = json.decode(peopleWithKeys) or {}
         keysTable[xTarget.identifier] = true
 
         MySQL.Async.execute('UPDATE owned_vehicles SET peopleWithKeys = @peopleWithKeys WHERE plate = @plate', {
