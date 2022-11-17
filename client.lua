@@ -1,10 +1,3 @@
-Citizen.CreateThread(function()
-    while ESX == nil do
-        TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-        Wait(100)
-    end
-end)
-
 RegisterCommand('lockvehicle', function()
 
     local vehicle, dist = ESX.Game.GetClosestVehicle()
