@@ -6,6 +6,7 @@ description 'Script that allows you to lock vehicles.'
 version '1.0.0'
 
 shared_scripts {
+    '@es_extended/imports.lua',
     '@es_extended/locale.lua',
     'locales.lua',
     'config.lua'
