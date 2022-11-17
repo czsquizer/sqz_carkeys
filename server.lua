@@ -1,5 +1,3 @@
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-
 local vehiclesCache = {}
 
 exports('resetPlate', function(plate)
