@@ -37,3 +37,63 @@ Locales['en'] = {
     ['lock_vehicle'] = 'Toggle vehicle locks',
     ['no_vehicle_found'] = 'There is no vehicle nearby'
 }
+
+Locales['pl'] = {
+    ['spz_not_found'] = 'Nie udało nam się znaleźć SPZ pojazdu',
+    ['no_keys'] = 'Nie masz kluczyków do tego pojazdu',
+    ['not_yours_vehicle'] = 'Ten pojazd nie jest twój',
+    ['locks_replaced'] = 'Zamki zostały pomyślnie wymienione',
+    ['paid_for_locks'] = 'Zapłaciłeś %s$ za nowe zamki',
+    ['not_enough_money'] = 'Nie masz wystarczająco dużo pieniędzy, aby kupić wymianę zamków',
+    ['wait_new_locks'] = 'Poczekaj pół minuty aż zamki zostaną wymienione',
+    ['installing_new_locks'] = 'Zamki są w trakcie wymiany',
+    ['received_keys'] = 'Otrzymałeś kluczyki do pojazdu o numerze rejestracyjnym: %s',
+    ['gave_keys'] = 'Podałeś kluczyki do pojazdu o numerze rejestracyjnym: %s',
+    ['locksmith'] = 'Ślusarz',
+    ['must_in_vehicle'] = 'Musisz siedzieć w pojeździe',
+    ['change_locks_for'] = '[E] Do wymiany zamki samochodowe %s$',
+    ['vehicle_locked'] = 'Pojazd został skutecznie zablokowany',
+    ['vehicle_unlocked'] = 'Pojazd został pomyślnie odblokowany',
+    ['lock_vehicle'] = 'Przełączanie zamków pojazdów',
+    ['no_vehicle_found'] = 'W pobliżu nie ma żadnego pojazdu'
+}
+
+Locales['sk'] = {
+    ['spz_not_found'] = 'Nepodarilo sa nám nájsť SPZ vozidla',
+    ['no_keys'] = "Nemáte kľúče od tohto vozidla",
+    ['not_yours_vehicle'] = 'Toto vozidlo nie je vaše',
+    ['locks_replaced'] = 'Zámky boli úspešne vymenené',
+    ['paid_for_locks'] = "Zaplatili ste %s$ za nové zámky",
+    ['not_enough_money'] = 'Nemáte dostatok peňazí na kúpu náhradných zámkov',
+    ['wait_new_locks'] = 'Počkajte pol minúty na výmenu zámkov',
+    ['installing_new_locks'] = 'Zámky sa práve vymieňajú',
+    ['received_keys'] = 'Obdržali ste kľúče od vozidla s evidenčným číslom: %s',
+    ['gave_keys'] = "Odovzdali ste kľúče od vozidla s evidenčným číslom: %s",
+    ['locksmith'] = "Locksmith,
+    ['must_in_vehicle'] = 'Musíte sedieť vo vozidle',
+    ['change_locks_for'] = '[E] Ak chcete vymeniť zámky vozidla %s$',
+    ['vehicle_locked'] = 'Vozidlo bolo úspešne zamknuté',
+    ['vehicle_unlocked'] = 'Vozidlo bolo úspešne odomknuté',
+    ['lock_vehicle'] = "Prepínanie zámkov vozidla",
+    ['no_vehicle_found'] = 'V okolí sa nenachádza žiadne vozidlo'.
+}
+
+Locales['de'] = {
+    ['spz_not_found'] = 'Wir konnten die SPZ des Fahrzeugs nicht finden',
+    ['no_keys'] = 'Sie haben die Schlüssel für dieses Fahrzeug nicht',
+    ['not_yours_vehicle'] = 'Dieses Fahrzeug gehört Ihnen nicht',
+    ['locks_replaced'] = 'Die Schlösser wurden erfolgreich ausgetauscht',
+    ['paid_for_locks'] = 'Sie haben %s$ für neue Schlösser bezahlt',
+    ['not_enough_money'] = 'Sie haben nicht genug Geld, um Ersatzschlösser zu kaufen',
+    ['wait_new_locks'] = 'Warten Sie eine halbe Minute, bis die Schlösser ersetzt werden',
+    ['installing_new_locks'] = 'Die Schlösser werden gerade ausgetauscht',
+    ['received_keys'] = 'Sie haben die Schlüssel für das Fahrzeug mit dem amtlichen Kennzeichen: %s' erhalten,
+    ['gave_keys'] = 'Sie haben die Schlüssel für das Fahrzeug mit dem amtlichen Kennzeichen: %s abgegeben',
+    ['locksmith'] = 'Schlüsseldienst,
+    ['must_in_vehicle'] = 'Sie müssen im Fahrzeug sitzen',
+    ['change_locks_for'] = '[E] Zum Wechseln der Autoschlösser %s$',
+    ['vehicle_locked'] = 'Das Fahrzeug wurde erfolgreich verriegelt',
+    ['vehicle_unlocked'] = 'Das Fahrzeug wurde erfolgreich entriegelt',
+    ['lock_vehicle'] = 'Fahrzeugverriegelung umschalten',
+    ['no_vehicle_found'] = 'Es befindet sich kein Fahrzeug in der Nähe'.
+}
