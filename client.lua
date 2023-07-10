@@ -1,9 +1,4 @@
-Citizen.CreateThread(function()
-    while ESX == nil do
-        TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-        Wait(100)
-    end
-end)
+ESX = exports["es_extended"]:getSharedObject()
 
 RegisterCommand('lockvehicle', function()
 
