@@ -1,7 +1,16 @@
-# <center>Quality hosting with preconfigured and DDoS protected cheap FiveM servers. Use link: https://zap-hosting.com/sqzscripts or a code when processing your order: `squizer-8709`.</center>
-[<img src="https://zap-hosting.com/interface/download/images.php?type=affiliate&id=202971">](https://zap-hosting.com/sqzscripts)
+<div align="center">
 
----
+# 🌐 **Host Smarter with Fusiora.com!** 🚀  
+
+<img src="https://fusiora.com/assets/img/branding/content/logo_white.svg" alt="Fusiora Logo" width="400">  
+
+🖥️ **Premium hardware** in **Netherlands**, **Miami**, & **Germany**.  
+🛡️ **DDoS protection** for **any game**.  
+💸 Use **`CODELY`** for **10% OFF**!  
+
+## 🔗 [**Start Hosting Now**](https://fusiora.com)  
+
+</div>
 
 # SQZ_CARKEYS SCRIPT
 
